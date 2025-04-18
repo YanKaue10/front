@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar Software</a></li>
+                <li><a href="solicitacoes.html">Solicitações</a></li>
+                <li><a href="cadastroprofessor.html">Cadastro Professor</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form id="software-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="link">Link para instalação:</label>
+                <input type="url" id="link" required>
+
+                <label for="versao">Versão:</label>
+                <input type="text" id="versao" required>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="livre">Livre</option>
+                    <option value="proprietario">Proprietário</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+                <p id="mensagem"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

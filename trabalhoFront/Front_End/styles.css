@@ -78,3 +78,25 @@ form button {
 form button:hover {
     background-color: #1a252f;
 }
+
+table button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table button:hover {
+    opacity: 0.8;
+}
+
+table button:first-child {
+    background-color: #2980b9;
+    color: white;
+}
+
+table button:last-child {
+    background-color: #c0392b;
+    color: white;
+}
